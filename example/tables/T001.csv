@@ -1,0 +1,7 @@
+# Company codes. Header: NAME[:LENGTH[:TYPE[:TEXT]]]
+MANDT:3:C:Client;BUKRS:4:C:Company Code;BUTXT:25:C:Name of Company Code;ORT01:25:C:City;LAND1:3:C:Country;WAERS:5:C:Currency
+100;1000;Muster AG;Hamburg;DE;EUR
+100;2000;Beispiel GmbH;Wien;AT;EUR
+100;3000;Example Inc.;Chicago;US;USD
+100;4000;"Test; Semikolon SA";Lyon;FR;EUR
+200;1000;Muster AG (Test);Hamburg;DE;EUR

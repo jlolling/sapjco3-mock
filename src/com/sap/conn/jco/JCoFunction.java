@@ -1,25 +1,42 @@
 package com.sap.conn.jco;
 
+import de.jlo.sapjco.mock.MockSystem;
+
 public class JCoFunction {
-	
-	private String name = null;
-	
+
+	private final String name;
+	private final JCoParameterList importParameterList = new JCoParameterList();
+	private final JCoParameterList exportParameterList = new JCoParameterList();
+	private final JCoParameterList tableParameterList = new JCoParameterList();
+
 	public JCoFunction(String name) {
 		this.name = name;
 	}
 
 	public JCoParameterList getImportParameterList() {
-		return new JCoParameterList();
+		return importParameterList;
+	}
+
+	public JCoParameterList getExportParameterList() {
+		return exportParameterList;
 	}
 
 	public JCoParameterList getTableParameterList() {
-		return new JCoParameterList();
+		return tableParameterList;
 	}
-	
-	public void execute(JCoDestination dest) throws Exception {
-		
+
+	/**
+	 * Logon and execute the function within the mock system
+	 */
+	public void execute(JCoDestination dest) throws JCoException {
+		if (dest == null) {
+			throw new IllegalArgumentException("Destination cannot be null");
+		}
+		MockSystem system = MockSystem.getInstance();
+		system.logon(dest.getProperties());
+		system.execute(this);
 	}
-	
+
 	public String getName() {
 		return name;
 	}

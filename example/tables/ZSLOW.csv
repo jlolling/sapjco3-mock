@@ -1,0 +1,4 @@
+# Table with a configured delay (table.ZSLOW.delayMillis)
+ID:4;TEXT:20
+1;slow row 1
+2;slow row 2
