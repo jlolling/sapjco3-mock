@@ -2,9 +2,18 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.jlolling</groupId>
   <artifactId>sapjco3-mock</artifactId>
-  <version>0.1</version>
+  <version>0.2</version>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
     <plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

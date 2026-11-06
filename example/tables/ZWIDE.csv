@@ -1,0 +1,3 @@
+# Table with wide fields to test DATA_BUFFER_EXCEEDED (more than 512 characters per line)
+ID:10;TEXT1:255;TEXT2:255;TEXT3:255
+1;a;b;c

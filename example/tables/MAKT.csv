@@ -1,0 +1,9 @@
+# Material descriptions
+MANDT:3:C:Client;MATNR:18:C:Material Number;SPRAS:1:C:Language;MAKTX:40:C:Material Description
+100;000000000000000101;D;Fahrrad Standard
+100;000000000000000101;E;Bicycle standard
+100;000000000000000102;D;Fahrrad Kinder
+100;000000000000000103;D;Rahmen Aluminium
+100;000000000000000104;D;Aluminiumrohr
+100;000000000000000105;D;Schmieröl
+100;000000000000000106;D;Klingel "Ding-Dong"
